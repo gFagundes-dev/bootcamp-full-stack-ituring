@@ -1,11 +1,11 @@
-// Verificando se a variavel é verdadeira
+// Verificando se a variavel é do tipo STRING
 
 // Valores de cada caixa
 const nome = "Guilherme Fagundes";
 const email = "gfagundes@belpit.com.br";
 const profissao = "Estagiario";
-const idade = 24
-const lugarSongaConhecer = "Suiça"
+const idade = 24;
+const lugarSongaConhecer = "Suiça";
 
 
 // Verificacao do tipo variavel - string
