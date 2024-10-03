@@ -6,8 +6,9 @@ const distanciaMilhasLuaTerra = 238900;
 const quilometrosEmMilhas = 1.6093; 
 
 // Realizando a funcao
-function valorConversaoMilhas(fatorConversao){    
-    fatorConversao = distanciaMilhasLuaTerra * quilometrosEmMilhas; // Calculo utilizando as variaveis
+function valorConversaoMilhas() {    
+   const fatorConversao = distanciaMilhasLuaTerra * quilometrosEmMilhas; // Calculo utilizando as variaveis
+    
     return fatorConversao; // Retornando o valor
 }
 
