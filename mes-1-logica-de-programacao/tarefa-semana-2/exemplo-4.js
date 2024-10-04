@@ -5,25 +5,14 @@ do produto e o valor com desconto.
 */
 
 // toFixed - Exibição de 2 casas decimais
-
-
-
-
-
-
-
 const valores = calcularDesconto(100,5);
 
 function calcularDesconto(valorProduto, desconto) {
-   const fatorDesconto = valorProduto - (valorProduto*desconto/100);
+   const valorFinalDesconto = valorProduto - (valorProduto*desconto/100);
 
-   return{ valorAtual: valorProduto.toFixed(2), // 2 casas decimais
-           DescontoAplicado: desconto,
-           valorFinal: fatorDesconto.toFixed(2) // 2 casas decimais
-   };
+   return{valorProduto,desconto,valorFinalDesconto};
 
 }
-
-console.log("Valor original: "+valores.valorAtual);
-console.log("Desconto (%): "+valores.DescontoAplicado);
-console.log("Valor final a pagar: "+valores.valorFinal);
+console.log(`Valor do produto: ${valores.valorProduto.toFixed(2)}`);
+console.log(`Desconto (%): ${valores.desconto}`);
+console.log(`Valor final c/desconto: ${valores.valorFinalDesconto.toFixed(2)}`);

@@ -4,15 +4,15 @@
 na variavel global, o parametro é recebido e retorna seu valor e no final
 exibe o seu argumento.
 */
-const mensagem= "Hello, World";
+const mensagem = apresentacaoPessoal("Hello, World");
 
 function apresentacaoPessoal(mensagem) {
-    const fatorApresentacao = mensagem;
+    const apresentacao = mensagem;
     
-    return fatorApresentacao;
+    return {apresentacao};
  }
 
- console.log(apresentacaoPessoal(mensagem));
+ console.log(`${mensagem.apresentacao}`);
 
 
 
@@ -26,4 +26,5 @@ function apresentacao(){
 }
 
 console.log(apresentacao());
+
 
