@@ -9,10 +9,10 @@ const mensagem = apresentacaoPessoal("Hello, World");
 function apresentacaoPessoal(mensagem) {
     const apresentacao = mensagem;
     
-    return {apresentacao};
+    return apresentacao;
  }
 
- console.log(`${mensagem.apresentacao}`);
+console.log(`A mensagem é: `+mensagem);
 
 
 

@@ -12,11 +12,18 @@ const calcularDesconto = (valorProduto,desconto) => {
    const valorDesconto = desconto;
    const calculoDeDesconto = valorProduto - (valorProduto*desconto/100);
    
-   return {valorAtual,valorDesconto,calculoDeDesconto};
+   return valorAtual,valorDesconto,calculoDeDesconto;
+  // return {valorAtual,valorDesconto,calculoDeDesconto};
 };
 
 const valorDeDesconto = calcularDesconto(1000,25);
 
-console.log(`Valor Original do produto: ${valorDeDesconto.valorAtual}`);
-console.log(`Desconto (%): ${valorDeDesconto.valorDesconto}`);
-console.log(`Valor final a pagar ${valorDeDesconto.calculoDeDesconto}`);
+console.log(`valor orig: `+calcularDesconto(1000,25));
+//console.log(`desconto `+calcularDesconto(1000,25).valorDesconto);
+//console.log(`valor final: `+calcularDesconto(1000,25).calculoDeDesconto);
+
+
+//console.log(`Valor Original do produto: ${valorDeDesconto.valorAtual.toFixed(2)}`);
+//console.log(`Desconto (%): ${valorDeDesconto.valorDesconto}`);
+//console.log(`Valor final a pagar ${valorDeDesconto.calculoDeDesconto.toFixed(2)}`);
+
